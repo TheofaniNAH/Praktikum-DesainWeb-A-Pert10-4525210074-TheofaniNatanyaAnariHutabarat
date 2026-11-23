@@ -110,12 +110,12 @@ Beberapa bagian yang diuji:
 
 ## Tampilan Desktop
 
-![Screenshot Website Bakery Desktop](/TUGAS%20PRAK/IMAGES/Desktop1.png)
-![Screenshot Website Bakery Desktop](/TUGAS%20PRAK/IMAGES/Desktop2.png)
+![Screenshot Website Bakery Desktop](IMAGES/desktop1.png)
+![Screenshot Website Bakery Desktop](IMAGES/desktop2.png)
 
 ## Tampilan Mobile
 
-![Screenshot Website Bakery Mobile](/TUGAS%20PRAK/IMAGES/Mobile.png)
+![Screenshot Website Bakery Mobile](IMAGES/mobile.png)
 
 ### KESIMPULAN
 
