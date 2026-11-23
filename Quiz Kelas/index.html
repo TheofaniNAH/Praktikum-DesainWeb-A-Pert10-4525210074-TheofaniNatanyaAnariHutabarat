@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mahasiswa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark brand-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Universitas Cendekia Nusantara</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarDashboard"
+            aria-controls="navbarDashboard"
+            aria-expanded="false" aria-label="Buka menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarDashboard">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Fakultas">Fakultas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#form">Pendaftaran</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main id="dashboard" class="container py-5">
+
+    <!-- HEADER -->
+    <div class="d-flex flex-column flex-md-row
+        justify-content-between align-items-md-center gap-3 mb-4">
+
+        <div>
+            <span class="section-label">DASHBOARD</span>
+            <h1 class="h2 fw-bold mb-1">Selamat Datang</h1>
+            <p class="text-secondary mb-0">
+                Universitas cendekia nusantara didirikan pada tanggal 28 Oktober 1966, merupakan penggabungan dari Universitas cendekia nusantara (lama) yang didirikan pada tahun 1963 dan Universitas Bung Karno.
+
+cendekia nusantara yang dijadikan nama dari Universitas ini tidaklah sekedar tanda pengenal dan pembeda dari Universitas- universitas lainnya, melainkan memiliki kedalaman arti yang hakiki, sesuai dengan misi yang diemban Universitas cendekia nusantara, yaitu “Memberikan peranan positif dalam pengembangan ilmu dan teknologi serta pengembangan masyarakat ber-cendekia nusantara seperti yang dicita-citakan dalam Pembukaan Undang-undang Dasar 1945.”
+            </p>
+        </div>
+
+        <div class="profile-box">
+            <img src="https://th.bing.com/th/id/OIP.e5G9xStmr2mq0IHlDGjlXQHaHL?w=184&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Foto profil mahasiswa">
+            <div>
+                <strong class="d-block">Log in</strong>
+                <span class="text-secondary">Mahasiswa</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALERT -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Perhatian!</strong>
+        Pendaftaran Mahasiswa Baru ditutup pada 11 Oktober 2026.
+        <button type="button" class="btn-close"
+            data-bs-dismiss="alert" aria-label="Tutup"></button>
+    </div>
+
+    <!-- STATISTIC CARD -->
+    <section class="row g-3 mb-5">
+        <span class="badge text-bg-success mb-3">Fasilitas</span>
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card dashboard-card h-100">
+                <div class="card-body">
+                    <p class="text-secondary mb-1">Laboratorium</p>
+                    <img src="https://th.bing.com/th/id/OIP.5yaI1hzTGZobLNu-Js1L9AHaEj?w=258&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Foto Laboratorium">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card dashboard-card h-100">
+                <div class="card-body">
+                    <p class="text-secondary mb-1"></p>Perpustakaan</p>
+                    <img src="data:image/webp;base64,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" alt="Foto Perpustakaan">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card dashboard-card h-100">
+                <div class="card-body">
+                    <p class="text-secondary mb-1">Smart Class</p>
+                    <img src="https://th.bing.com/th/id/OIP.zmdGjVXKXHJaf8Ldbm-ovAHaEK?w=302&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Foto Smart Class">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card dashboard-card h-100">
+                <div class="card-body">
+                    <p class="text-secondary mb-1">RUMAH IBADAH</p>
+                    <img src="https://th.bing.com/th/id/OIP.YXoF83peI-QC8AOlCL1EQAHaHa?w=180&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Foto Rumah Ibadah">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Fakultas -->
+    <section id="Fakultas" class="mb-5">
+        <div class="mb-4">
+            <h2 class="h3 fw-bold">Fakultas</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="h5">Fakultas Teknik</h3>
+                        <p class="text-secondary">
+                            Fakultas Teknik biasanya berisi berbagai program studi seperti Teknik Sipil, Teknik Mesin, Teknik Elektro, Teknik Industri, Teknik Informatika, Teknik Kimia, Teknik Lingkungan, Teknik Geologi, Teknik Perkapalan, hingga Teknik Robotika. Daftar lengkapnya mencakup puluhan jurusan teknik yang tersedia di berbagai universitas di Indonesia.
+                        </p>
+                        <button class="btn btn-brand"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalDetail">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="h5">Fakultas Ekonomi</h3>
+                        <p class="text-secondary">
+                            FEB atau Fakultas Ekonomi dan Bisnis adalah rumpun pendidikan tinggi yang mempelajari cara kerja ekonomi, pengelolaan bisnis, keuangan, serta pengambilan keputusan dalam organisasi dan perusahaan. FEB membahas bagaimana uang, bisnis, dan strategi dijalankan di dunia nyata.
+                        </p>
+                        <button class="btn btn-brand"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalDetail">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="h5">Fakultas Hukum</h3>
+                        <p class="text-secondary">
+                            Fakultas Hukum adalah unit akademik di perguruan tinggi yang menyelenggarakan pendidikan ilmu hukum, seperti di Universitas Gadjah Mada, Universitas Indonesia, Universitas Nasional, dan Universitas Negeri Gorontalo.
+                        </p>
+                        <button class="btn btn-brand"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalDetail">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FORM PENDAFTARAN -->
+    <section id="form" class="registration-section">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-4 p-md-5">
+
+                        <span class="section-label">PENDAFTARAN</span>
+                        <h2 class="h3 fw-bold">Mahasiswa Baru</h2>
+                        <p class="text-secondary">
+                            Lengkapi form berikut. Field bertanda *
+                            wajib diisi.
+                        </p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">
+                                    Nama Lengkap *
+                                </label>
+                                <input type="text" class="form-control"
+                                    id="nama" name="nama" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email *
+                                </label>
+                                <input type="email" class="form-control"
+                                    id="email" name="email"
+                                    placeholder="nama@email.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="jenis" class="form-label">
+                                    Pilih Fakultas *
+                                </label>
+                                <select class="form-select" id="jenis"
+                                    name="jenis" required>
+                                    <option value="">-- Pilih Fakultas --</option>
+                                    <option>Teknik</option>
+                                    <option>Ekonomi</option>
+                                    <option>Hukum</option>
+                                </select>
+                            </div>
+
+                            <fieldset class="mb-3">
+                                <legend class="form-label">
+                                    Jalur Pendaftaran*
+                                </legend>
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="radio" name="kehadiran"
+                                        id="offline" value="offline" required>
+                                    <label class="form-check-label"
+                                        for="offline">Bersinar</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="radio" name="kehadiran"
+                                        id="online" value="online">
+                                    <label class="form-check-label"
+                                        for="online">CBT</label>
+                                </div>
+                            </fieldset>
+
+                            <div class="mb-3">
+                                <label for="alasan" class="form-label">
+                                    Mengetahui Universitas dari mana
+                                </label>
+                                <textarea class="form-control"
+                                    id="alasan" name="alasan"
+                                    rows="4" maxlength="300"></textarea>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input"
+                                    type="checkbox" id="setuju" required>
+                                <label class="form-check-label" for="setuju">
+                                    Saya menyatakan data yang diisi sudah benar.
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn btn-brand"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalKonfirmasi">
+                                Kirim Pendaftaran
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- MODAL DETAIL -->
+<div class="modal fade" id="modalDetail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5">Detail Fakultas</h2>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+                Informasi lengkap mengenai Fakultas akan ditampilkan
+                pada bagian ini.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                    data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL KONFIRMASI -->
+<div class="modal fade" id="modalKonfirmasi" tabindex="-1"
+    aria-labelledby="judulKonfirmasi" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="judulKonfirmasi">
+                    Konfirmasi Pendaftaran
+                </h2>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+                Apakah Anda yakin data yang dimasukkan sudah benar?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                    data-bs-dismiss="modal">Periksa Kembali</button>
+                <button class="btn btn-brand">Ya, Kirim</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="brand-footer py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-0">© 2026 Portal Fakultas Mahasiswa</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
